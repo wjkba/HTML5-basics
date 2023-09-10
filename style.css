@@ -1,0 +1,48 @@
+body {
+  padding: 2rem;
+  padding-top: 0;
+  margin: 0;
+}
+.header {
+  padding: 1rem;
+  background: linear-gradient(
+    90deg,
+    rgba(248, 100, 26, 1) 0%,
+    rgba(252, 241, 0, 1) 100%
+  );
+  max-width: 30rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.header h1 {
+  font-family: monospace;
+  color: white;
+}
+main {
+  padding: 1rem;
+  text-align: justify;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: hsl(43, 18%, 92%);
+}
+main li {
+  padding: 0.5rem;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  width: 90%;
+}
+main li:hover {
+  background-color: #f9cf08;
+  border-radius: 0.5rem;
+}
+main a {
+  display: block;
+  width: 100%;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+}

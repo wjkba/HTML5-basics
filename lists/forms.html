@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <!--
+        GET = appends your data at the end of url
+    -->
+    <h2>Formularz #1</h2>
+    <form name="FORM1" action="action_pae.php" method="GET">
+        <div>
+            <label for="group1">Group1: </label>
+
+            <label>Mr.</label>
+            <input type="radio" id="Mr." name="group1" value="Mr.">
+
+            <label>Mrs.</label>
+            <input type="radio" id-="Mrs." name="group1" value="Mrs.">
+
+            <label>PhD.</label>
+            <input type="radio" id="PhD." name="group1" value="PhD">
+        </div>
+        <div>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="placeholder" required> 
+        </div>
+
+        <br>
+
+        <div>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="send"><u>Send credentials:</u></label>
+            <input type="submit">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+    </form>
+
+    <h2>Formularz #2 - hasło maxlength=16</h2>
+    <form name="FORM2">
+        <label for="pass">password:</label>
+        <input type="password" id="pass" name="pass" maxlength="16">
+    </form>
+
+    <h2>Formularze </h2>
+    <form name="FORM3">
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" placeholder="TYPE IN YOUR EMAIL">
+        </div>
+        <div>
+            <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" placeholder="XXX-XXX-XXX">
+        </div>
+        <div>
+            <label for="bdate">birthdate</label>
+            <input type="date" id="bdate">
+        </div>
+        <h3>Quantity</h3>
+        <div>
+            <label for="quantity">Quantity of the product(s):</label>
+            <input id="quantity" type="number" min="0" max="10">
+        </div>
+    </form>
+    
+    <h3>Formularz - opcje</h3>
+    <form name="FORM4">
+        <div>
+            <label for="chbox">Checkbox option:</label>
+            <input type="checkbox" name="Checkbox: " id="chbox">
+        </div>
+        <div>
+            <label for="payment">Payment option:</label>
+            <select id="payment" name="payment">
+                <option value="paypal">PayPal</option>
+                <option value="blik">blik</option>
+                <option value="przelewy24">Przelewy24</option>
+                <option value="card">mastercard/visa</option>
+                <br>
+        </div>
+    </form>
+    <br>
+
+
+
+
+
+<footer>
+    <br><br><hr><button onclick="history.back()">Go Back</button>
+</footer>
+</body>
+</html>
