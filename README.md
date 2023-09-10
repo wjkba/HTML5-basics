@@ -1,3 +1,3 @@
-# html5-basics
+# HTML5-basics
 
 ![preview](/preview.png)
